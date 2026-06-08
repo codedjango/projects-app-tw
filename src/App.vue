@@ -54,9 +54,9 @@ const deleteProject = (id: string) => {
 }
 
 const handleClearCompleted = () => {
-	for (let i = filteredProjects.value.length - 1; i >= 0; i--) {
-		if (filteredProjects.value[i].done) {
-			filteredProjects.value.splice(i, 1)
+	for (let i = projects.value.length - 1; i >= 0; i--) {
+		if (projects.value[i].done) {
+			projects.value.splice(i, 1)
 		}
 	}
 }

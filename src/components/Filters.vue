@@ -22,8 +22,7 @@ const allFilters: Filter[] = ['all', 'done', 'todo']
 			class="cursor-pointer rounded-lg px-4 py-1.5 text-sm font-medium transition"
 			:class="currentFilter === filter ? 'bg-blue-600 text-white' : 'bg-slate-200 text-slate-600'"
 		>
-			<!-- {{ filter ? filter.charAt(0).toUpperCase() + filter.slice(1) : filter }} -->
-			{{ filter }}
+			{{ filter ? filter.charAt(0).toUpperCase() + filter.slice(1) : filter }}
 		</button>
 	</div>
 </template>
